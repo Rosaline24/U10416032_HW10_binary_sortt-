@@ -8,7 +8,7 @@ public class BST{
 		}else{
 			Node focusNode = root;
 			Node parent;
-			
+			//sort the number to left if it's small, and sort the big one to right
 			while(true){
 				parent = focusNode;
 				if(key < focusNode.key){
@@ -27,10 +27,11 @@ public class BST{
 			}
 		}
 	}
+	//Create a method
 	public void inOrderTraverseTree(Node focusNode){
 		if(focusNode != null){
 			inOrderTraverseTree(focusNode.leftChild);
-			
+			//print out the inorder numbers
 			System.out.println(focusNode.key);
 			
 			inOrderTraverseTree(focusNode.rightChild);
@@ -41,8 +42,9 @@ public class BST{
 }
 class Node{
 	int key;
-	
+	//Left subtree
 	Node leftChild;
+	//Right subtree
 	Node rightChild;
 	
 	Node(int key){

@@ -2,7 +2,7 @@ public class TestBST{
 	public static void main(String[] args){
 		
 		BST theTree = new BST();
-		
+		//add the numbers into Node
 		theTree.addNode(50);
 		theTree.addNode(80);
 		theTree.addNode(23);
